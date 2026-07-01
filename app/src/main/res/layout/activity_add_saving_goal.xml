@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Savings Goal"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etGoalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goal Name"/>
+
+        <EditText
+            android:id="@+id/etTargetAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Target Amount"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etCurrentAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Amount"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etTargetDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Target Date"/>
+
+        <Button
+            android:id="@+id/btnSaveGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Goal"/>
+
+    </LinearLayout>
+
+</ScrollView>
