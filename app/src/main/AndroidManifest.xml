@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoneyMate">
         <activity
+            android:name=".savings.AddBudgetActivity"
+            android:exported="false" />
+        <activity
             android:name=".savings.AddSavingGoalActivity"
             android:exported="false" />
         <activity
