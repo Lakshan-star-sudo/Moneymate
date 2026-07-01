@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Custom colors for the modules -->
+    <color name="background_light">#F8F9FE</color>
+    <color name="primary_purple">#6C63FF</color>
+    <color name="text_grey">#6E7191</color>
+    <color name="expense_red">#F44336</color>
+    <color name="income_green">#4CAF50</color>
 </resources>
