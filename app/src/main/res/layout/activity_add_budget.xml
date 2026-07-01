@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".budget.AddBudgetActivity">
+    android:orientation="vertical"
+    android:padding="20dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Budget"
-        android:textSize="24sp"
+        android:text="Create New Budget"
+        android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginBottom="24dp"/>
 
-    <EditText
-        android:id="@+id/etBudgetName"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        android:hint="Budget Name"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:hint="Budget Name (e.g. Food, Transport)">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBudgetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/etBudgetAmount"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        android:hint="Amount"
-        android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@id/etBudgetName"/>
+        android:layout_marginTop="16dp"
+        android:hint="Allocated Amount">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBudgetAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnSaveBudget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
+        android:layout_marginTop="32dp"
         android:text="Save Budget"
-        app:layout_constraintTop_toBottomOf="@id/etBudgetAmount"/>
+        android:padding="12dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
