@@ -1,26 +1,38 @@
 package com.nibm.moneymate.auth;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.nibm.moneymate.R;
+import com.nibm.moneymate.dashboard.DashboardActivity;
 
 public class LoginActivity extends AppCompatActivity {
+
+    Button btnLogin;
+    TextView txtRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        btnLogin = findViewById(R.id.btnLogin);
+        txtRegister = findViewById(R.id.txtRegister);
+
+        btnLogin.setOnClickListener(
+                v -> {
+                    Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
+                    startActivity(intent);
+                });
+
+        txtRegister.setOnClickListener(
+                v -> {
+                    Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                    startActivity(intent);
+                });
     }
 }
