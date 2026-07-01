@@ -16,25 +16,21 @@
         android:layout_marginTop="20dp"/>
 
     <!-- Total Income -->
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:cardCornerRadius="12dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:orientation="vertical">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Total Income"
                 android:textStyle="bold"/>
-
             <TextView
                 android:id="@+id/txtIncome"
                 android:layout_width="wrap_content"
@@ -42,29 +38,24 @@
                 android:text="Rs. 50,000"
                 android:textSize="18sp"/>
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 
     <!-- Total Expense -->
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:cardCornerRadius="12dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:orientation="vertical">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Total Expense"
                 android:textStyle="bold"/>
-
             <TextView
                 android:id="@+id/txtExpense"
                 android:layout_width="wrap_content"
@@ -72,29 +63,24 @@
                 android:text="Rs. 25,000"
                 android:textSize="18sp"/>
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 
     <!-- Current Budget -->
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:cardCornerRadius="12dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:orientation="vertical">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Current Budget"
                 android:textStyle="bold"/>
-
             <TextView
                 android:id="@+id/txtBudget"
                 android:layout_width="wrap_content"
@@ -102,29 +88,24 @@
                 android:text="Rs. 15,000"
                 android:textSize="18sp"/>
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 
     <!-- Savings Goal -->
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:cardCornerRadius="12dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:orientation="vertical">
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Savings Goal"
                 android:textStyle="bold"/>
-
             <TextView
                 android:id="@+id/txtSavings"
                 android:layout_width="wrap_content"
@@ -132,7 +113,6 @@
                 android:text="Rs. 10,000"
                 android:textSize="18sp"/>
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
