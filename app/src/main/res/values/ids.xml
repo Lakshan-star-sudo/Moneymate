@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtRegisterTitle" type="id" />
+    <item name="fullNameLayout" type="id" />
+    <item name="etFullName" type="id" />
+    <item name="confirmPasswordLayout" type="id" />
+    <item name="etConfirmPassword" type="id" />
+    <item name="btnRegister" type="id" />
+    <item name="txtLogin" type="id" />
+</resources>
