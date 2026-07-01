@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoneyMate">
         <activity
+            android:name=".savings.ProgressDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".savings.SavingGoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".budget.AddBudgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".budget.BudgetManagementActivity"
+            android:exported="false" />
+        <activity
             android:name=".dashboard.DashboardActivity"
             android:exported="false" />
         <activity
