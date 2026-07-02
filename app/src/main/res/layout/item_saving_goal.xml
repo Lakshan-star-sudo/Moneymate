@@ -4,10 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginVertical="8dp"
+    android:layout_margin="8dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="3dp">
+    app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,58 +14,40 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/txtGoalName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Laptop"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
-            <TextView
-                android:id="@+id/txtTargetAmount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="Rs. 150,000"
-                android:textColor="@android:color/holo_green_dark"/>
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/txtGoalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Laptop"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target: Rs.150,000"/>
+
+        <TextView
+            android:id="@+id/txtCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current: Rs.40,000"/>
 
         <ProgressBar
             android:id="@+id/progressGoal"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:max="100"
-            android:progress="30"
-            android:progressTint="@android:color/holo_green_light"/>
+            android:progress="26"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/txtProgress"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="4dp">
-            <TextView
-                android:id="@+id/txtSavedAmount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Saved: Rs. 45,000"
-                android:textSize="12sp"/>
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
-            <TextView
-                android:id="@+id/txtProgressPercent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="30%"
-                android:textSize="12sp"
-                android:textStyle="bold"/>
-        </LinearLayout>
+            android:text="26% Completed"/>
 
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>
