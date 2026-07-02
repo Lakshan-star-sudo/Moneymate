@@ -1,62 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Savings Goal"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="24dp"/>
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Goal Name (e.g. New Laptop, Vacation)">
-        <com.google.android.material.textfield.TextInputEditText
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Savings Goal"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <EditText
             android:id="@+id/etGoalName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:hint="Goal Name"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="Target Amount">
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/etTargetAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:hint="Target Amount"
+            android:inputType="number"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="Initial Savings (Optional)">
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/etCurrentAmount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:hint="Current Amount"
+            android:inputType="number"/>
 
-    <Button
-        android:id="@+id/btnSaveGoal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Save Goal"
-        android:padding="12dp"/>
+        <EditText
+            android:id="@+id/etTargetDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Target Date"/>
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnSaveGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Goal"/>
+
+    </LinearLayout>
+
+</ScrollView>
