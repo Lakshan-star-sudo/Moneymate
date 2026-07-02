@@ -1,35 +1,22 @@
 package com.nibm.moneymate.budget;
 
-import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.nibm.moneymate.R;
 
 public class BudgetManagementActivity extends AppCompatActivity {
 
-    RecyclerView recyclerBudget;
-    FloatingActionButton fabAddBudget;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_budget_management);
 
-        recyclerBudget = findViewById(R.id.recyclerBudget);
-        fabAddBudget = findViewById(R.id.fabAddBudget);
-
-        fabAddBudget.setOnClickListener(v -> {
-
-            Intent intent = new Intent(
-                    BudgetManagementActivity.this,
-                    AddBudgetActivity.class);
-
-            startActivity(intent);
-
-        });
     }
 }

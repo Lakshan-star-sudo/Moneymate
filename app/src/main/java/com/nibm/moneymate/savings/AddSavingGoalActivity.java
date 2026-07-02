@@ -1,4 +1,4 @@
-package com.nibm.moneymate.budget;
+package com.nibm.moneymate.savings;
 
 import android.os.Bundle;
 
@@ -10,14 +10,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.nibm.moneymate.R;
 
-public class AddBudgetActivity extends AppCompatActivity {
+public class AddSavingGoalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_add_budget);
-
+        setContentView(R.layout.activity_add_saving_goal);
 
     }
 }
