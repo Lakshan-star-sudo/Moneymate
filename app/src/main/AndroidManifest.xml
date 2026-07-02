@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MoneyMate">
-
+        <activity
+            android:name=".savings.AddBudgetActivity"
+            android:exported="false" />
         <activity
             android:name=".savings.AddSavingGoalActivity"
             android:exported="false" />
@@ -30,29 +32,15 @@
         <activity
             android:name=".dashboard.DashboardActivity"
             android:exported="false" />
-
-        <!-- Common Feature Activities -->
         <activity
             android:name=".auth.RegisterActivity"
             android:exported="false" />
-        <activity
-            android:name=".auth.ForgotPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".common.ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".common.ReportsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".common.CurrencyConverterActivity"
-            android:exported="false" />
-
         <activity
             android:name=".auth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
