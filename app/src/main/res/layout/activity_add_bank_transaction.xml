@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RadioGroup
+        android:id="@+id/rgType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbDeposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Deposit"/>
+
+        <RadioButton
+            android:id="@+id/rbWithdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Withdraw"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note (optional)"/>
+
+    <Button
+        android:id="@+id/btnAttachSlip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Attach Bank Slip Photo"/>
+
+    <ImageView
+        android:id="@+id/ivSlipPreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnSaveTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save Transaction"/>
+
+</LinearLayout>

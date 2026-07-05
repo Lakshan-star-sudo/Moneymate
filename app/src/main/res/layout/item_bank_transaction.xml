@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:background="#2C2C2C"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTransType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Type"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTransDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2026-07-04"
+            android:textColor="#CCCCCC"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvTransNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Note"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTransAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:gravity="end"
+        android:text="Rs. 0.00"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnEditTransaction"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="6dp"
+        android:background="#808080"
+        android:contentDescription="Edit"
+        android:padding="6dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteTransaction"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="#808080"
+        android:contentDescription="Delete"
+        android:padding="6dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Bank Account"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etBankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bank Name"/>
+
+    <EditText
+        android:id="@+id/etAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Account Number"/>
+
+    <EditText
+        android:id="@+id/etHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Account Holder Name"/>
+
+    <EditText
+        android:id="@+id/etBranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Branch"/>
+
+    <EditText
+        android:id="@+id/etBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Initial Balance"/>
+
+    <Button
+        android:id="@+id/btnSaveAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save Account"/>
+
+</LinearLayout>
