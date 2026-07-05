@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+array transaction_type
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnAdd
+id btnDelete
+id btnHistory
+id btnSave
+id btnUpdate
+id etAmount
+id etCategory
+id etDate
+id etDescription
+id listTransactions
+id spType
+id txtAmount
+id txtBalance
+id txtCategory
+id txtDate
+id txtExpense
+id txtIncome
+layout activity_add_transaction
+layout activity_edit_transaction
+layout activity_main
+layout activity_transaction_history
+layout transaction_item
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.FinanceManager
+style Theme.FinanceManager
+xml backup_rules
+xml data_extraction_rules
