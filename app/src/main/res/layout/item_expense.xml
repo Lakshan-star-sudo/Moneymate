@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#1E1E1E">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/txtExpenseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txtExpenseAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs.2500"
+            android:textColor="#00E676"/>
+
+        <TextView
+            android:id="@+id/txtPaidBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid by You"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/txtExpenseType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Split Equally"
+            android:textColor="#BBBBBB"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
