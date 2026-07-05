@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MoneyMate">
+        <activity
+            android:name=".common.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".saving.ProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".saving.EditSavingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".saving.AddSavingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".saving.SavingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".budget.EditBudgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".budget.AddBudgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".budget.BudgetActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

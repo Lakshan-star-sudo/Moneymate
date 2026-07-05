@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MoneyMate</string>
+    <string name="add_budget" />
+    <string name="reports_analytics"><![CDATA[Reports & Analytics]]></string>
+</resources>
