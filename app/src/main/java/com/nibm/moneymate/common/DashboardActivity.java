@@ -11,10 +11,11 @@ import androidx.cardview.widget.CardView;
 import com.nibm.moneymate.R;
 import com.nibm.moneymate.budget.BudgetActivity;
 import com.nibm.moneymate.saving.SavingActivity;
+import com.nibm.moneymate.warrantycard.WarrantyActivity;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    CardView cardIncome, cardExpense,cardGroupExpense, cardBudget, cardSavings, cardReports, cardProfile;
+    CardView cardIncome, cardExpense,cardGroupExpense, cardBudget, cardSavings, cardReports, cardProfile ,cardWarranty;
     Button btnLogout;
 
     @Override
@@ -30,6 +31,7 @@ public class DashboardActivity extends AppCompatActivity {
         cardSavings = findViewById(R.id.cardSavings);
         cardReports = findViewById(R.id.cardReports);
         cardProfile = findViewById(R.id.cardProfile);
+        cardWarranty = findViewById(R.id.cardWarranty);
 
         btnLogout = findViewById(R.id.btnLogout);
 
@@ -75,6 +77,13 @@ public class DashboardActivity extends AppCompatActivity {
             Intent intent = new Intent(DashboardActivity.this, ReportActivity.class);
             startActivity(intent);
 
+        });
+        // Warrant Card
+        cardWarranty.setOnClickListener(v -> {
+            Toast.makeText(this, "WarrantyCard Module", Toast.LENGTH_SHORT).show();
+
+            Intent intent = new Intent(DashboardActivity.this, WarrantyActivity.class);
+            startActivity(intent);
         });
 
         // Profile

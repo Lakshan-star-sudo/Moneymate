@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoneyMate">
         <activity
-            android:name=".common.SettingsActivity"
+            android:name=".warrantycard.WarrantyDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".warrantycard.EditWarrantyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".warrantycard.AddWarrantyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".warrantycard.WarrantyActivity"
             android:exported="false" />
         <activity
             android:name=".common.ReportActivity"

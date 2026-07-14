@@ -188,6 +188,24 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardWarranty"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Warranty Card"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cardProfile"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
@@ -204,12 +222,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold"/>
             </androidx.cardview.widget.CardView>
-
-
-
         </GridLayout>
-
-
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
