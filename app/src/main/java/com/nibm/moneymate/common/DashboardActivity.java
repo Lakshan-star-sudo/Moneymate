@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.nibm.moneymate.R;
 import com.nibm.moneymate.budget.BudgetActivity;
 import com.nibm.moneymate.saving.SavingActivity;
@@ -102,7 +103,26 @@ public class DashboardActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+        btnLogout.setOnClickListener(view -> {
 
+            // Firebase user sign out
+            FirebaseAuth.getInstance().signOut();
+
+            // Open Login page
+            Intent intent = new Intent(
+                    DashboardActivity.this,
+                    LoginActivity.class
+            );
+
+            // Remove Dashboard and previous pages
+            intent.setFlags(
+                    Intent.FLAG_ACTIVITY_NEW_TASK |
+                            Intent.FLAG_ACTIVITY_CLEAR_TASK
+            );
+
+            startActivity(intent);
+            finish();
+        });
 
 
     }
